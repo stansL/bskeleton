@@ -1,42 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
 
-    <title>Hello, world!</title>
-</head>
+    <!-- navbar -->
+    <nav class="navbar navbar-toggleable-md bg-info navbar-inverse">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Training</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<body>
-
-
-
-    <div class="jumbotron jumbotron-fluid bg-info text-white ">
-        <div class="container text-center">
+    <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
+        <div class="container">
             <h1 class="display-1">Welcome to the Dojo</h1>
-            <p class="lead">Guiding light for the well enlightened</p>
+            <p class="lead">A guiding light for the less enlightened...</p>
         </div>
     </div>
 
+    <div class="container text-muted">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        <!-- cards -->
 
-</body>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/img/node.png">
+                    <div class="card-block">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/img/react.png">
+                    <div class="card-block">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/img/mongo.png">
+                    <div class="card-block">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="/img/webpack.png">
+                    <div class="card-block">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p class="card-text">Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- navs -->
+
+        <h2 class="display-4 py-5 mt-5 text-center">Meet the Speakers</h2>
+
+        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a class="nav-link active" href="#ninja" data-toggle="tab">The Net Ninja</a>
+            <a class="nav-link" href="#wizard" data-toggle="tab">The Web Wizard</a>
+            <a class="nav-link" href="#captain" data-toggle="tab">Captain Code</a>
+            <a class="nav-link" href="#avenger" data-toggle="tab">Angular Avenger</a>
+        </nav>
+
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="ninja">
+                <h3>The Net Ninja</h3>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="tab-pane fade" id="wizard">
+                <h3>The Web Wizard</h3>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="tab-pane fade" id="captain">
+                <h3>Captain Code</h3>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="tab-pane fade" id="avenger">
+                <h3>Angular Avenger</h3>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p>Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+
+    </div><!-- end .container -->
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
